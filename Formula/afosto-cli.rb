@@ -5,25 +5,25 @@
 class AfostoCli < Formula
   desc "CLI tool for interaction with Afosto/IO"
   homepage "https://afosto.com/"
-  version "0.0.19"
+  version "0.0.20"
   license "Apache-2.0"
   bottle :unneeded
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/afosto/cli/releases/download/v0.0.19/cli_0.0.19_Darwin_x86_64.tar.gz"
-      sha256 "4784464ea564da6985e44e56c0a3a7ff6ec17a544f663a1701a757e00b586d13"
+      url "https://github.com/afosto/cli/releases/download/v0.0.20/cli_0.0.20_Darwin_x86_64.tar.gz"
+      sha256 "8c3f940429ed5b5789d2a71da4fe85b1a8c27f1597c358639a033ab99f777a59"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/afosto/cli/releases/download/v0.0.19/cli_0.0.19_Linux_x86_64.tar.gz"
-      sha256 "75c43e31d368881485b5be12b087e3d405cf40110f0c16372a5872824c963534"
+      url "https://github.com/afosto/cli/releases/download/v0.0.20/cli_0.0.20_Linux_x86_64.tar.gz"
+      sha256 "527fc058deaa52b5919dadc72027d90aa3ebdb0231a32108c5c0cbd108b24494"
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/afosto/cli/releases/download/v0.0.19/cli_0.0.19_Linux_arm64.tar.gz"
-      sha256 "5bf69224468d3aee054a52ace9ca85344556809aa018457dd1f4a868d711e9e4"
+      url "https://github.com/afosto/cli/releases/download/v0.0.20/cli_0.0.20_Linux_arm64.tar.gz"
+      sha256 "087bfbec5de43d61c09679067e189fc6d7d5ba3f62171484ebded33fd07f7a76"
     end
   end
 
